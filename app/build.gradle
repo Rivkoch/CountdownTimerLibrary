@@ -6,6 +6,10 @@ plugins {
 //    id 'dagger.hilt.android.plugin'
 }
 
+//configurations.all {
+//    resolutionStrategy { force 'androidx.work:work-runtime:2.6.0' }
+//}
+
 android {
     namespace 'com.rivkoch.coundownlibrary'
     compileSdk 33
@@ -54,7 +58,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.10.1'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -71,9 +75,9 @@ dependencies {
 
     // more compose
     // ViewModel and LiveData support
-    implementation "androidx.navigation:navigation-compose:2.6.0-alpha04"
-    implementation "androidx.compose.material:material-icons-extended:1.3.1"
+    implementation "androidx.navigation:navigation-compose:2.7.0-beta02"
     implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
+    implementation "androidx.compose.material:material-icons-extended:1.4.3"
 
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1'
 
@@ -84,14 +88,15 @@ dependencies {
     implementation 'androidx.navigation:navigation-compose:2.6.0'
 
 // Kotlin coroutines support
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
     //HiltViewModel
     implementation "com.google.dagger:hilt-android:2.44"
     kapt "com.google.dagger:hilt-compiler:2.44"
 
     //MY LIBRARY
-    implementation project(':countdown-timer-setup')
+    implementation 'com.github.Rivkoch:CountdownTimerLibrary:1.0.0'
+//    implementation project(':countdown-timer-setup')
 }
 
 
