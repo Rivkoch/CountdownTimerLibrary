@@ -95,8 +95,8 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.44"
 
     //MY LIBRARY
-    implementation 'com.github.Rivkoch:CountdownTimerLibrary:1.0.0'
-//    implementation project(':countdown-timer-setup')
+//    implementation 'com.github.Rivkoch:CountdownTimerLibrary:1.0.0'
+    implementation project(':countdown-timer-setup')
 }
 
 
