@@ -11,11 +11,10 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.rivkoch.countdown_timer_setup.SensitiveCountdownTimerViewModel
 
 @Composable
 fun SensitiveCountdownTimer(minutes: Double) {
-    val viewModel: SensitiveCountdownTimerViewModel = viewModel()
+    val viewModel: com.rivkoch.countdown_timer_setup.SensitiveCountdownTimerViewModel = viewModel()
 
     Column(modifier = Modifier.padding(16.dp)) {
         val displayMinutes = viewModel.timerValue / 60
