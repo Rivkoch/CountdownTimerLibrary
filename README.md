@@ -1,5 +1,6 @@
 # CountdownTimerLibrary
 [![](https://jitpack.io/v/Rivkoch/CountdownTimerLibrary.svg)](https://jitpack.io/#Rivkoch/CountdownTimerLibrary)
+
 CountdownTimerLibrary is an open-source library for using countdown codes easily. Users can define and initialize the time on their program needs.
 
 ## The library contains two view model classes of the timer functions:
